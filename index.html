@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loja LabEye</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <section class="form-section">
+        <div id="welcome">
+          <h1>
+            <id="titulo">LabEye 👀
+        </h1>
+        </div>
+
+        <br>
+        <p>
+            <id="subtitulo">Insira informações de sua receita oftálmica para realizarmos uma breve análise do seu pedido
+        </p>
+        <br>
+         
+      <div class="text .input">
+        
+          <div class="campo">
+            <label><strong>Grau esférico do olho esquerdo</strong></label>
+            <input type="number" name="esfericoesq" id="esfericoesq" max="0" min="-15">
+          </div>
+        
+      </div>
+
+      <div class="text .input">
+        
+          <div class="campo">
+            <label><strong>Grau esférico do olho direito</strong></label>
+            <input type="number" name="esfericodir" id="esfericodir" max="0" min="-15">
+          </div>
+        
+      </div>
+
+      <div class="text .input">
+        
+        <div class="campo">
+          <label><strong>Grau cilíndrico do olho esquerdo</strong></label>
+            <input type="number" name="esfericoesq" id="cilinesq" min="-6" step="0.25">
+        </div>
+      
+    </div>
+
+    <div class="text .input">
+        
+      <div class="campo">
+        <label><strong>Grau cilíndrico do olho direito</strong></label>
+            <input type="number" name="esfericodir" id="cilindir" min="-6" step="0.25">
+      </div>
+    
+      </div>
+      <div>
+        <button class="botao" type="submit" id="botao" onclick="resultado()">Realizar Análise</button>
+    </div>
+
+    <div class="div-resultado">
+      <p id="resultado"></p>
+  </div>
+
+    </section>
+    <ul class="squares"></ul>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
